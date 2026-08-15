@@ -1,0 +1,21 @@
+/* Copyright 2026 上海如静知华信息科技有限公司 */
+package cn.zhuatech.demandai.controller;
+
+import cn.zhuatech.demandai.common.ApiResponse;
+import cn.zhuatech.demandai.service.DemandForecastService;
+import jakarta.validation.Valid;
+import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.web.bind.annotation.*;
+
+@RestController
+@RequestMapping("/api/ai/demand")
+@PreAuthorize("hasAnyRole('DOMAIN_USER','DOMAIN_OPERATOR','ADMIN')")
+public class DemandForecastController {
+    private final DemandForecastService service;
+    public DemandForecastController(DemandForecastService service) { this.service = service; }
+
+    @PostMapping("/forecast")
+    public ApiResponse<DemandForecastService.Result> forecast(@Valid @RequestBody DemandForecastService.Request request) {
+        return ApiResponse.ok("需求预测完成", service.forecast(request));
+    }
+}
