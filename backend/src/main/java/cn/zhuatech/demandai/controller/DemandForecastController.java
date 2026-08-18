@@ -18,4 +18,10 @@ public class DemandForecastController {
     public ApiResponse<DemandForecastService.Result> forecast(@Valid @RequestBody DemandForecastService.Request request) {
         return ApiResponse.ok("需求预测完成", service.forecast(request));
     }
+
+    @PostMapping("/backtest")
+    public ApiResponse<DemandForecastService.BacktestResult> backtest(
+        @Valid @RequestBody DemandForecastService.BacktestRequest request) {
+        return ApiResponse.ok("预测回测诊断完成", service.backtest(request));
+    }
 }

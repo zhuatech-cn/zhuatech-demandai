@@ -42,11 +42,12 @@ H5 工作台让计划员查看负责品类、活动事件、预测差异和补�
 - 商品、区域、渠道与预测层级管理
 - 历史均值、近期趋势、季节因子和促销提升组合预测
 - 安全库存、建议补货量和 `REPLENISH / HOLD / REDUCE` 信号
+- 多周期预测回测，计算 WAPE、系统偏差、最差周期与版本发布门禁
 - 模型基线与人工调整版本并行保存
 - 预测任务、版本审批、活动日历和准确率分析
 - JWT 权限、MySQL 迁移、Docker Compose 与响应式双端
 
-参考接口：`POST /api/ai/demand/forecast`。默认策略完全本地运行，不需要 API Key，便于个人理解需求预测和供应链计划工程边界。
+参考接口：`POST /api/ai/demand/forecast`、`POST /api/ai/demand/backtest`。默认策略完全本地运行，不需要 API Key，便于个人理解需求预测和供应链计划工程边界。
 
 ## 工程信息
 
