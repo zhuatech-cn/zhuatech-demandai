@@ -1,4 +1,4 @@
-/* Copyright 2026 上海如静知华信息科技有限公司 */
+/* Copyright 2026 上海如静知华信息科技有限公司 · https://www.zhuatech.cn/ */
 export const domain={
  code:'DEMANDAI',systemName:'知华需求预测 AI 平台',englishName:'AI DEMAND FORECASTING',theme:{primary:'#345a78',dark:'#21374a',accent:'#d28b3f'},
  workspace:'供应链中心 / 智能计划组',fieldWorkspace:'华东区域 / 需求计划组',period:'2026-08-15 · 滚动预测',liveText:'销售与库存数据于 10:30 更新',fieldContextLabel:'预测周期',fieldContext:'W34—W41 八周滚动',fieldUser:'林澈',fieldRole:'需求计划员',adminUser:'苏岚',adminRole:'计划平台主管',
