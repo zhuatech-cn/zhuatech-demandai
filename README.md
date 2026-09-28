@@ -2,6 +2,8 @@
 
 # ZhuaTech DemandAI
 
+[简体中文](README.md) | [English](README.en.md)
+
 ### 知华需求预测 AI 平台 · 社区源码版
 
 把销量、活动、季节和库存信号，变成可解释的滚动预测与补货建议。
