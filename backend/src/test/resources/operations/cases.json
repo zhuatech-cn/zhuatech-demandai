@@ -1,0 +1,66 @@
+[
+  {
+    "patch": {},
+    "expected": {
+      "decision": "PASS",
+      "wapePct": "#15",
+      "biasPct": "#10"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "absoluteError": "201"
+    },
+    "expected": {
+      "decision": "HOLD"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "maximumBias": "9"
+    },
+    "expected": {
+      "decision": "HOLD"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "absoluteError": "99"
+    },
+    "expected": {},
+    "error": true
+  },
+  {
+    "patch": {
+      "absoluteError": "2101"
+    },
+    "expected": {},
+    "error": true
+  },
+  {
+    "patch": {
+      "actualTotal": "0",
+      "forecastTotal": "0",
+      "absoluteError": "0"
+    },
+    "expected": {
+      "decision": "REVIEW",
+      "wapePct": "N/A"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "actualTotal": "0",
+      "forecastTotal": "100",
+      "absoluteError": "100"
+    },
+    "expected": {
+      "decision": "HOLD"
+    },
+    "error": false
+  }
+]
