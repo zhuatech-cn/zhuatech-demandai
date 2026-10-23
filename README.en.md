@@ -1,5 +1,9 @@
 [简体中文](README.md) | **English**
 
+## Functional update: Croston-SBA intermittent demand forecasting
+
+Implements a reproducible Croston-SBA statistical baseline for intermittent demand, including all-zero sequences and explicit initialization. Signed-in users can edit inputs and export real computed results. See [API, examples and limitations](docs/AI_OPERATIONS_UPGRADE_20261023.md). No external model calls or automatic business changes; existing licensing and contacts remain unchanged. The existing backtest API now supports zero-demand periods; all-zero histories return metricsDefined=false and null relative metrics, and gate comparisons use unrounded ratios.
+
 # ZhuaTech DemandAI
 
 > A source-available enterprise project by [ZhuaTech](https://www.zhuatech.cn/) for enterprise AI-assisted workflows with human governance.
